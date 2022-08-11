@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <title>J.A.R.V.I.S</title>
+  <link rel="icon" href="a865256d7ae3c7a90fec2e4cea5f2f17-modified.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+  }
+
+  .gog {
+    display: inline-block;
+  }
+</style>
+
+<body onload="hi()">
+  <audio id="myAudio">
+    <source id="srcy" src="" type="audio/mpeg">
+  
+  </audio>
+
+
+  
+  <div>
+    <div style="color: black;" id="zoomoutcam" class="modal fade">
+      <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+      
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h1><b>ZOOM CAMERA</b></h1>
+  </div>
+    <div class="modal-body">
+<center>
+  <div id="camt">
+
+</div>
+</center>
+    </div>
+    </div>
+      </div>
+      </div>
+
+
+
+    <div style="color: black;" id="openmodal" class="modal fade">
+      <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h1><b>About Section</b></h1>
+    </div>
+    <div class="modal-body">
+<h5><b>Jarvis:</b><a href="https://drive.google.com/file/d/1hVFBE9iWBJ2dWQkBkzllIYDtYwUsvHg0/view"  target="_blank" > https://drive.google.com/file/d/1hVFBE9iWBJ2dWQkBkzllIYDtYwUsvHg0/view</a></h5>
+<h5><b>Friday:</b><a href="https://drive.google.com/file/d/1DwRNGtp6qVWyJxlyD4B5lfsQWKIVN1Vi/view"  target="_blank" > https://drive.google.com/file/d/1DwRNGtp6qVWyJxlyD4B5lfsQWKIVN1Vi/view</a></h5>
+</div>
+    </div>
+      </div>
+      </div>
+    <center>
+      <p style="font-size: 90px;" id="onb"><b>J.A.R.V.I.S</b></p> 
+
+      <a data-toggle="modal" data-target="#openmodal"><img src="9e759fd37ccd98da121b670249f34afa.gif" style="margin-right: 90%; margin-top: 270px;"></a>
+      <img src="a865256d7ae3c7a90fec2e4cea5f2f17.gif" style="margin-left: 75%; margin-top: -310px; height: 300px;">
+      <img src="932fd00d9b43753061c47739f0cc777b.gif" style="margin-top: -290px;">
+    </center> 
+  </div>
+  <div>
+    <div
+      style="margin-top: -800px; margin-left: 35px; background-color: rgb(255, 0, 128); border: 1px black; height: 85px; width: 85px; border-radius: 50px;">
+      <center id="datein"></center>
+    </div>
+  </div>
+
+  <div style="margin-top: -100px; z-index: 9999; margin-left: 79%;">
+    <a data-toggle="modal" data-target="#zoomoutcam"><div id="cam"></div></a>
+  </div>
+  <div>
+
+    <h1 style="margin-top: -200; margin-left: 10px;"><span><img src="battery-symbol-removebg-preview.png" class="gog"
+          style="height: 50px; display: inline;"></span><span>
+        <h3 class="gog" id="bet"></h3>
+      </span></h1>
+    <h1 style=" margin-left: 10px; z-index: 99; margin-top: -12;"><span><img src="clock-outline-filled.png" class="gog"
+          style="height: 50px; display: inline;"></span><span>
+        <h3 class="gog" id="tim"></h3>
+      </span></h1>
+    <p style="margin-top: 50; margin-left: 79%;" id="lokl"></p>
+    <button class="btn btn-danger" style="margin-left: 91px; " onclick="act_jarvic()" id="ai_act">Activate Jarvis</button><br><br>
+    <button class="btn btn-danger" style="margin-left: 91px; " data-toggle="modal" data-target="#openmodal">About Section</button>
+<center><img id="myloadon" style="margin-top: -100;" src=""></center>
+
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

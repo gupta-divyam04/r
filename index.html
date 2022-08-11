@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>J.A.R.V.I.S</title>
+        <link rel="icon" href="a865256d7ae3c7a90fec2e4cea5f2f17-modified.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body style="background-color: black; color: white;" onload="klo()">
+        <center>
+        <h1>Opps, Conection is lost</h1><br>
+        <h4>Check your Conection</h4>
+        <img src="no-wifi-icon-connection-sign-footage-154014071_iconl.jpg">
+        <br>
+        <h3>Reload, after connecting Network or press "E"</h3>
+</center>
+      </body>
+      <script>
+        
+        var ifConnected = window.navigator.onLine;
+if (ifConnected) {
+    location.replace("main.html");
+} else {
+    window.addEventListener("keydown", my_keydown)
+
+function my_keydown(e) {
+    keypressed = e.keyCode
+    console.log(keypressed)
+    if (keypressed == 69) {
+        location.reload();
+    }
+}}
+
+function klo(){
+    if (ifConnected) {
+    location.replace("devise.html");
+} else {
+    window.addEventListener("keydown", my_keydown)
+
+function my_keydown(e) {
+    keypressed = e.keyCode
+    console.log(keypressed)
+    if (keypressed == 69) {
+        location.reload();
+    }
+}}
+}
+      </script>
+</html>
